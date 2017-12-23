@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0a5790</color>
+    <color name="colorPrimaryDark">#10487B</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="primary_background">#10487B</color>
+
+    <color name="primary">#002a3b</color>
+    <color name="white_40_perc_opac">#66ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="white_60_perc_opac">#99ffffff</color>
+    <color name="white_alpha">#BFFFFFFF</color>
+    <color name="mva_blue">#2a8cf8</color>
+    <color name="mva_blue_light">#9BC9FB</color>
+    <color name="silver">#b7bbbf</color>
+    <color name="denim_blue">#3b5998</color>
+    <color name="twitter_blue">#55acee</color>
+    <color name="twitter_blue_pressed">#FF4186C8</color>
+    <color name="facebook_blue">#3B5998</color>
+    <color name="facebook_blue_pressed">#2f477a</color>
+    <color name="google_color">#d34836</color>
+    <color name="google_dark_color">#2d2d2d</color>
+    <color name="blue_trans">#4c2a8cf8</color>
+    <color name="dark_grey_blue">#324350</color>
+    <color name="screen_bg">#ebebeb</color>
+    <color name="dark">#2c3843</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#EC1721</color>
+    <color name="white_90">#e5ffffff</color>
+    <color name="black">#000000</color>
+    <color name="black_tans">#33ffffff</color>
+    <color name="dark_background">#23272f</color>
+    <color name="light_gold">#fdd860</color>
+    <color name="white_30">#4cffffff</color>
+    <color name="white_two">#d8d8d8</color>
+    <color name="white_three">#f1f1f1</color>
+    <color name="battleship_grey_two">#617380</color>
+    <color name="battleship_grey">#70777d</color>
+    <color name="cool_grey">#8b8c8c</color>
+    <color name="hint_grey">#95989d</color>
+    <color name="background_grey">#3c434e</color>
+    <color name="dark_two">#2d3a46</color>
+    <color name="cool_grey_two">#9ea3a9</color>
+    <color name="gunmetal">#2c313b</color>
+    <color name="light_grey_background">#f5f5f5</color>
+    <color name="black_87">#dd000000</color>
+    <color name="black_54">#8a000000</color>
+    <color name="grey">#585858</color>
+
+    <color name="text_color">#333333</color>
+    <color name="txt_warm_grey">#828282</color>
+    <color name="transparent_gainsboro">#88DFDFDF</color>
+    <color name="text_grey">#828282</color>
+    <color name="colorProgress">#148cea</color>
+    <color name="divider_white">#c8c7cc</color>
+
+</resources>
