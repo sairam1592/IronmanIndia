@@ -25,4 +25,18 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/white_alpha</item>
+        <item name="thickness">@dimen/drawer_thickness</item>
+        <item name="gapBetweenBars">@dimen/drawer_gapBetweenBars</item>
+        <item name="drawableSize">@dimen/drawer_drawableSize</item>
+    </style>
+
+    <style name="ToolBarStyle" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/white_alpha</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="actionMenuTextColor">@color/white_alpha</item>
+    </style>
+
 </resources>

@@ -1,3 +1,40 @@
 <resources>
-    <dimen name="fab_margin">16dp</dimen>
+    <item name="drawer_drawableSize" type="dimen">24dp</item>
+    <item name="drawer_gapBetweenBars" type="dimen">3dp</item>
+    <item name="drawer_thickness" type="dimen">2dp</item>
+    <dimen name="cardview_compat_inset_shadow">1dp</dimen>
+    <dimen name="cardview_default_elevation">2dp</dimen>
+    <dimen name="cardview_default_radius">2dp</dimen>
+
+    <!-- **************************** Padding *********************-->
+    <dimen name="padding_1">1dp</dimen>
+    <dimen name="padding_2">2dp</dimen>
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="padding_30">30dp</dimen>
+    <dimen name="padding_40">40dp</dimen>
+    <dimen name="padding_50">50dp</dimen>
+    <dimen name="padding_60">60dp</dimen>
+
+    <!-- **************************** Elevation *********************-->
+    <dimen name="elevation">2dp</dimen>
+
+    <!-- **************************** Font size *********************-->
+    <dimen name="font_size_10">10sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="action_bar_title">20sp</dimen>
+    <dimen name="font_size_22">22sp</dimen>
+
+    <!-- **************************** Rounded Corners radius *********************-->
+    <dimen name="corner_radius_2">2dp</dimen>
+    <dimen name="corner_radius_4">4dp</dimen>
+    <dimen name="corner_radius_8">8dp</dimen>
+    <dimen name="corner_radius_100">100dp</dimen>
 </resources>
