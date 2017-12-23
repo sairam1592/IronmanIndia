@@ -1,13 +1,295 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/primary_background">
+    android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/white_alpha" />
+        android:background="@color/white_60_perc_opac"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
 
-</LinearLayout>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:theme="@style/ToolBarStyle"
+            app:titleTextColor="@color/white_alpha" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:text="Why Ironman India?"
+                android:textAlignment="center"
+                android:textColor="@color/primary_background"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="The art of steam ironing in Ironman India provides perfection to the professional level. Steam ironing imparts moisture in your fabrics. This moisture content will help your fabrics from ageing. This is an absolute next level experience."
+                android:textAlignment="textStart"
+                android:textColor="@color/primary_background"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/hint_grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:paddingTop="10dp"
+                android:text="Steam Ironing, at the touch of your finger"
+                android:textAlignment="center"
+                android:textColor="@color/primary_background"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/app_desc_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="15dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="There are lots of apps out there, but not many that will do your ironing for you. That’s where Ironman India comes in. Now this is what we call the age of convenience."
+                android:textAlignment="textStart"
+                android:textColor="@color/primary_background"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/hint_grey" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/begin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="We are proud to announce that, our app will be available for our customers from"
+                android:textAlignment="textStart"
+                android:textColor="@color/primary_background"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="15th January, 2018"
+                android:textColor="@color/primary_background"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/app_begin_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Countdown:"
+                android:textColor="@color/primary_background"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_timer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/app_begin_textview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:id="@+id/day_counter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/day_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white_three"
+                        android:padding="1dp"
+                        android:textColor="@color/primary_background"
+                        android:textSize="50dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="DAYS"
+                        android:textColor="@color/primary_background"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/hour_counter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/hour_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white_three"
+                        android:padding="1dp"
+                        android:textColor="@color/primary_background"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="HOURS"
+                        android:textColor="@color/primary_background"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/minute_counter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/minute_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white_three"
+                        android:padding="1dp"
+                        android:textColor="@color/primary_background"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="MINS"
+                        android:textColor="@color/primary_background"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/second_counter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/second_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/white_three"
+                        android:padding="1dp"
+                        android:textColor="@color/primary_background"
+                        android:textSize="50sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/second_count"
+                        android:layout_centerHorizontal="true"
+                        android:text="SECS"
+                        android:textColor="@color/primary_background"
+                        android:textSize="13sp"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="3dp"
+            android:gravity="bottom"
+            android:text="App version 1.0"
+            android:textColor="@color/hint_grey"
+            android:textSize="10sp"
+            android:textStyle="normal" />
+
+    </LinearLayout>
+</ScrollView>
