@@ -122,7 +122,7 @@
                 android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:text="15th January, 2018"
+                android:text="11th Febraury, 2018"
                 android:textColor="@color/primary_background"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -279,14 +279,14 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/app_version_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center"
+            android:layout_marginBottom="3dp"
             android:layout_marginRight="10dp"
             android:layout_marginTop="5dp"
-            android:layout_marginBottom="3dp"
-            android:gravity="bottom"
-            android:text="App version 1.0"
+            android:gravity="bottom|center_vertical"
             android:textColor="@color/hint_grey"
             android:textSize="10sp"
             android:textStyle="normal" />

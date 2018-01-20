@@ -1,5 +1,7 @@
 package com.ironmanindia.ironmanindia;
 
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.ActionBar;
@@ -32,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R2.id.second_count)
     TextView second_count;
 
+    @BindView(R2.id.app_version_text)
+    TextView app_version_text;
+
     private Handler handler;
     private Runnable runnable;
 
@@ -41,7 +46,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.content_main);
         ButterKnife.bind(this);
         setupActionBar();
-        countDownStart();
+        startCountDown();
+
+        try {
+            PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
+            String version = pInfo.versionName;
+            app_version_text.setText("version " + version);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     private void setupActionBar() {
@@ -51,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setDisplayShowHomeEnabled(true);
     }
 
-    public void countDownStart() {
+    public void startCountDown() {
         handler = new Handler();
         runnable = new Runnable() {
             @Override
@@ -61,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                     SimpleDateFormat dateFormat = new SimpleDateFormat(
                             "yyyy-MM-dd");
                     // Please here set your event date//YYYY-MM-DD
-                    Date futureDate = dateFormat.parse("2018-1-15");
+                    Date futureDate = dateFormat.parse("2018-2-11");
                     Date currentDate = new Date();
                     if (!currentDate.after(futureDate)) {
                         long diff = futureDate.getTime()
